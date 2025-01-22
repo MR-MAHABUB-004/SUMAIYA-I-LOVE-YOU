@@ -57,6 +57,6 @@ function timeElapse(date){
 	}
 	var result = "";
     result += "To celebrate our: <br>";
-	result += "<span class=\"digit\" >" + days + "</span> Day <span class=\"digit\">" + hours + "</span> Hour <span class=\"digit\">" + minutes + "</span> Min <span class=\"digit\">" + seconds + "</span> Sec";
+	result += "<span class=\"digit\" >" +365 days + "</span> Day <span class=\"digit\">" + hours + "</span> Hour <span class=\"digit\">" + minutes + "</span> Min <span class=\"digit\">" + seconds + "</span> Sec";
 	$("#clock").html(result);
 }
