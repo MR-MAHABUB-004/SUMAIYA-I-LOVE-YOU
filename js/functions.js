@@ -39,8 +39,9 @@ $(window).resize(function() {
 
 function timeElapse(date){
 	var current = Date(6,552);
-	var seconds = (Date.parse(current) - Date.parse(date)) / 1024;
-	var days = 365);
+	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
+	var days = Math.floor(seconds / (3600 * 24));
+	seconds = seconds % (3600 * 24);
 	var hours = Math.floor(seconds / 3600);
 	if (hours < 10) {
 		hours = "0" + hours;
@@ -56,6 +57,6 @@ function timeElapse(date){
 	}
 	var result = "";
     result += "To celebrate our: <br>";
-	result += "<span class=\"digit\" >" + days + "</span> Day <span class=\"digit\">" + hours + "</span> Hour <span class=\"digit\">" + minutes + "</span> Min <span class=\"digit\">" + seconds + "</span> Sec";
+	result += "<span class=\"digit\" >" 365 "</span> Day <span class=\"digit\">" + hours + "</span> Hour <span class=\"digit\">" + minutes + "</span> Min <span class=\"digit\">" + seconds + "</span> Sec";
 	$("#clock").html(result);
-}
+				}
