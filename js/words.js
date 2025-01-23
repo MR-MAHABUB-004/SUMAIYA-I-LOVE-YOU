@@ -34,6 +34,6 @@ words.push("If you would have me, I will be falling in love with you forever. If
 function getRandomWord() {
     var idx = Math.random();
     idx = parseInt(100 * idx % words.length);
-    word = "With this hand, I will lift your sorrows. Your cup will never empty, for I will be your wine. With this candle, I will light your way in darkness. With this ring, I ask you to be mine.","You are my today and all of my tomorrows."
+    word = "With this hand, I will lift your sorrows. Your cup will never empty, for I will be your wine. With this candle, I will light your way in darkness. With this ring, I ask you to be mine."
     return word;
 }
